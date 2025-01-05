@@ -1,0 +1,39 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #eeeeee;
+}
+
+/* Header style */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section style */
+section {
+    margin: 20px;
+}
+
+/* Heading styles */
+h2 {
+    color: #e3e3e3;
+}
+
+/* Command list styles */
+.command-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.command-list li {
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #626262;
+    border-radius: 5px;
+}
