@@ -1,39 +1,127 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Smooth modern font */
     margin: 0;
     padding: 0;
-    background-color: #000000;
-    color: #eeeeee;
+    background-color: #050505; /* Dark background */
+    color: #f0f0f0;
 }
 
-/* Header style */
+/* Header Style - Smaller and no rounded borders */
 header {
-    background-color: #333;
+    background: linear-gradient(145deg, #080019, #000000); /* Dark background for header */
     color: #fff;
+    padding: 10px 20px; /* Reduced padding */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin-left: 10px; /* Space between logo and text */
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.gif-text {
+    background-image: url('https://cdn.7tv.app/paint/01J6M387YG0000HJTPW7AY3FZX/layer/01JAMR3EW9Q3R9765PKXM7M4S8/1x.gif'); /* Your GIF URL */
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+#logo {
+    width: 30px; /* Logo size */
+    height: auto;
+}
+
+/* Search Bar */
+.search-container {
     padding: 20px;
     text-align: center;
 }
-
-/* Section style */
-section {
-    margin: 20px;
+.search-title {
+    color: #dedede; /* Accent color for the title */
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Space between title and search bar */
+    font-weight: bold;
 }
 
-/* Heading styles */
-h2 {
-    color: #e3e3e3;
+#search-bar {
+    width: 300px; /* Set the width of the search bar to a fixed size */
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
 }
 
-/* Command list styles */
-.command-list {
-    list-style-type: none;
-    padding-left: 0;
+#search-bar:focus {
+    outline: none;
+    background-color: #444;
 }
 
-.command-list li {
-    margin: 10px 0;
-    padding: 8px;
-    background-color: #626262;
-    border-radius: 5px;
+/* Tags Container */
+.tags-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.tag {
+    background-color: #8757f4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tag:hover {
+    background-color: #2eeefa ;
+}
+
+/* Command Cards */
+.commands {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.command-card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.command-card:hover {
+    transform: scale(1.05);
+    background-color: #202020;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Filters */
+.fun {
+    background-color: #8757f4;
+}
+
+.utility {
+    background-color: #2eeefa;
+}
+
+.custom {
+    background-color: #3f3f3f;
+}
+#logo {
+    width: 50px;  /* Set the width of the GIF */
+    height: auto; /* Maintain aspect ratio */
 }
