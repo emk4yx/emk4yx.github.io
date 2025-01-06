@@ -75,7 +75,7 @@ header h1 {
 }
 
 .tag {
-    background-color: #8757f4;
+    background-color: #8757f4; /* Purple background by default */
     color: #fff;
     padding: 10px 20px;
     border-radius: 50px;
@@ -84,9 +84,11 @@ header h1 {
 }
 
 .tag:hover {
-    background-color: #2eeefa ;
+    background-color: #2eeefa; /* Blue background on hover */
 }
-
+.tag.active {
+    background-color: #2eeefa; /* Matches hover color */
+}
 /* Command Cards */
 .commands {
     display: grid;
