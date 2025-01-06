@@ -4,39 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MK Bot Commands</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Google font -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>MK Bot Command List</h1>
-    <p>Here are the available bot commands categorized by type</p>
-</header>
+    <header>
+        <!-- Logo goes here -->
+        <img src="https://cdn.discordapp.com/attachments/1291317839780778075/1325791041911263302/white_bat.gif?ex=677d12a0&is=677bc120&hm=c7b1ff5179a785302068ab523943786f3c800e23476580bbf3e2c47f2fd923dd&" alt="Logo" id="logo">
+        <h1 class="gif-text">emk4yx</h1>
+    </header>
+    
+    <div class="search-container">
+        <h2 class="search-title">Commands</h2>
+        <input type="text" id="search-bar" placeholder="Search commands...">
+    </div>
 
-<section id="fun-commands">
-    <h2>Fun Commands</h2>
-    <ul class="command-list">
-        <li><strong>!8ball</strong> - Ask the bot a question and get a random answer!</li>
-        <li><strong>!aura</strong> - Get your aura reading.</li>
-        <li><strong>!myrank</strong> - Check your rank in the channel.</li>
-        <li><strong>!pp</strong> - Get the bot's estimate of someone's "pp" size.</li>
-    </ul>
-</section>
+    <div class="tags-container">
+        <span class="tag" data-filter="fun">Fun</span>
+        <span class="tag" data-filter="utility">Utility</span>
+    </div>
 
-<section id="utility-commands">
-    <h2>Utility Commands</h2>
-    <ul class="command-list">
-        <li><strong>!addcom</strong> - Add a custom command to the bot.</li>
-        <li><strong>!delcom</strong> - Delete a custom command from the bot.</li>
-        <li><strong>!editcom</strong> - Edit an existing custom command.</li>
-        <li><strong>!join</strong> - Make the bot join a specified channel.</li>
-        <li><strong>!part</strong> - Make the bot leave a channel.</li>
-        <li><strong>!ping</strong> - Check the bot's response time.</li>
-        <li><strong>!toggle</strong> - Toggle commands on or off in the channel.</li>
-        <li><strong>!prefix</strong> - Set the command prefix.</li>
-    </ul>
-</section>
+    <section class="commands">
+        <div class="command-card fun">
+            <h3>!8ball</h3>
+            <p>Ask the bot a question and get a random answer!</p>
+        </div>
+        <div class="command-card fun">
+            <h3>!aura</h3>
+            <p>Get your aura %</p>
+        </div>
+        <div class="command-card fun">
+            <h3>!myrank</h3>
+            <p>Get your estimate VALORANT rank.</p>
+        </div>
+        <div class="command-card fun">
+            <h3>!pp</h3>
+            <p>Get your estimate "pp" size.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!addcom</h3>
+            <p>Add a custom command to the bot.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!editcom</h3>
+            <p>Edit an existing custom command.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!delcom</h3>
+            <p>Delete a custom command from the bot.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!join</h3>
+            <p>Make the bot join a specified channel.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!part</h3>
+            <p>Make the bot leave a channel.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!ping</h3>
+            <p>Check the bot's response time and stats.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!toggle</h3>
+            <p>Toggle commands on or off in the channel.</p>
+        </div>
+        <div class="command-card utility">
+            <h3>!prefix</h3>
+            <p>Set the command prefix.</p>
+        </div>
+        
 
-<script src="scripts.js"></script> <!-- Link to external JavaScript -->
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
